@@ -67,7 +67,5 @@ print(f"Mean Absolute Error: {mae:.2f}")
 
 # Ensure models folder exists
 os.makedirs("models", exist_ok=True)
-
-# Save model
-joblib.dump(model, "models/price_prediction_model.pkl")
-print("💾 Model saved to models/price_prediction_model.pkl")
+joblib.dump(model, "models/price_prediction_model.joblib")
+print("💾 Model saved to models/price_prediction_model.joblib")

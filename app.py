@@ -6,7 +6,8 @@ import joblib
 df = pd.read_csv("data/real_estate_clean.csv")
 
 # Load trained model
-model = joblib.load("models/price_prediction_model.pkl")
+model = joblib.load("models/price_prediction_model.joblib")
+
 
 # Define rule-based Good Investment function
 def is_good_investment(price_per_sqft, amenities_score, transport, schools_nearby):
